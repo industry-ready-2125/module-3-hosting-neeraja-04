@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe ID</title>
+    <style>
+        body {
+            font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+            display: flex;
+            font-style: normal;
+            background-image: url(https://auth.services.adobe.com/img/canvas/Fotolia_200977622_XL.jpg);
+            background-size: cover;
+            background-position: 10% 12.5%;
+            overflow: hidden;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        .Signin_page{
+            position: relative; 
+            z-index: 1; 
+        }
+        .Emailid {
+            display: block;
+            padding-top: 2.5em;
+            font-size: 75%;
+            color: rgb(97, 97, 97);
+        }
+        #Emailid {
+            width: 90%;
+            border: 0;
+            z-index: 1;
+            background-color: transparent;
+            border-bottom: 1px solid #eee; 
+            padding: 0.5em 0em 0.5em 0em;
+            &:focus, &:valid {
+                outline: 0;
+                border-bottom-color: rgb(211, 211, 211);
+            }
+        }
+        .newuser {
+            display: inline;
+        }
+        .button {
+            display: block;
+            font: inherit;
+            border-radius: 50rem;
+            margin : 1em;
+            padding: 0.25em 0.5em 0.25em 0.5em;
+            border-color: rgb(211, 211, 211);
+            border-width: 0.1em;
+            &:focus {
+                outline: 0;
+            }
+        }
+        #submit {
+            background-color: #1473e6;
+            border-color: #1473e6;
+            color: #fff;
+            font-size: .875rem;
+            width: 20%;
+            font-weight: 500;
+            margin: 1.5em 0em 1em 0em;
+            padding: 0.5em 0em 0.5em 0em;
+        }
+        button.button{
+            font : inherit;
+            font-weight: 500;
+            color: rgb(70, 68, 68);
+            width: 80%;
+            padding: 1em 0em 1em 0em;
+            background-color: white;
+        }
+        #signin{
+            margin-top: 0;
+        }
+        #right {
+            background-color: white;
+            border-radius: 0.25em;
+            padding: 2.5em 1.5em 4em 4em;
+            margin: 1% 10% 10% 10%;
+            flex:1;
+        }
+        .logo {
+            width: 10%;
+            margin: 2em 0em 2em 0em;
+        }
+        #left p{
+            color: white;
+            font-size: 1.25em;
+            margin: 0em 0em 0em 0em;
+        }
+        #left {
+            flex:1;
+            padding-left: 10%;
+            padding-top: 17.5em;
+        }
+        .brand-image {
+            display: inline-block;
+            width: 3em;
+            height: 3em;
+            vertical-align: middle;
+        }
+        .brand-label {
+            flex-shrink: 0;
+            margin: 0 0 0 0.5em;
+            font-weight: 650;
+            font-size: 2em;
+            color: rgb(255, 255, 255);
+            font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="left">
+        <a href="index.html">
+        <span class="brand-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.5 118.1"><defs><style>.cls-1 {fill: #ffffff;}</style></defs><g><g><polygon class="cls-1" points="84.1 0 133.5 0 133.5 118.1 84.1 0"></polygon><polygon class="cls-1" points="49.4 0 0 0 0 118.1 49.4 0"></polygon><polygon class="cls-1" points="66.7 43.5 98.2 118.1 77.6 118.1 68.2 94.4 45.2 94.4 66.7 43.5"></polygon></g></g></svg></span> 
+        </a>
+        <span class="brand-label">Adobe</span>
+        <p style="font-size: 1.2em; font-weight: 90;">Sign in or create an account</p>
+    </div>
+    <div id="right">
+        <div>
+            <h1 id ="signin" class="Signin_page">Sign in</h1>  
+        </div>
+        <div>
+            <form id = "Emailform" class="Signin_page">
+                <p class="newuser">New user?</p>
+                <a href="" class="newuser">Create an account</a>
+                <label for = "Emailid" class="Emailid" class="Signin_page">Email address</label>
+                <input type="email" id="Emailid" name="Emailid" class = "Emailid" class="Signin_page">
+                <button type="submit" id="submit" class = "button" class="Signin_page" style="float: right; margin-right:10%">Continue</button>
+            </form>
+        </div>
+        <div>
+            <br><br><br>
+            <!--hr style="margin-top: 20px; margin-right:10%;"-->
+            <p style="margin-left: 40%;">Or</p></div>
+        <div class="OtherSignInOptions">
+            <a href="page03.html">
+                <button class="button">Continue with Google</button>
+            </a>
+            <button class = "button">Continue with Facebook</button>
+            <button class = "button">Continue with Apple</button>
+        </div>
+        <div>
+            <a href="" style="font-size: small;">Get help signing in</a>
+        </div>
+    </div>
+</body>
+</html>
